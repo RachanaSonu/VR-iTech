@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>VR-iTech</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+</head>
+<style>
+h2{
+	color:floralwhite;
+	font-weight: 400;
+	font-size: 20px;
+	font-family: Baloo Chetta; /* Use your preferred font */
+	animation: zoomInOut3 2s infinite alternate;
+}
+@keyframes zoomInOut3 {
+	0% {
+		transform: scale(1); /* Initial scale */
+	}
+	100% {
+		transform: scale(1.3); /* Zoom in scale */
+	}
+}
+/* .scroll-message-container {
+    overflow:scroll;
+    position: static;
+    top: 0%;
+    left: 0;
+    width: 100%;
+	background-color:rgba(255, 255, 255, 0.767);
+    color: #000000;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .scroll-text {
+
+    font-size: larger;
+    font-weight: bolder;
+    display: inline-block;
+    animation: scrollAnimation 15s linear infinite;
+  }
+
+  @keyframes scrollAnimation {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  } */
+
+  .scroll-message-container {
+    position: static;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.767);
+    color: #000000;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scroll-text {
+    font-size: larger;
+    font-weight: bolder;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollAnimation 15s linear infinite;
+}
+
+@keyframes scrollAnimation {
+    0%, 100% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+}
+
+.mySlides {display:none;}
+.mySlides1 {display:none;}
+
+
+  /* .scroll-message-container {
+    overflow:scroll;
+    position: static;
+    top: 0%;
+    left: 0;
+    width: 100%;
+	background-color:rgba(255, 255, 255, 0.767);
+    color: #000000;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .scroll-text {
+	margin-left: 25%;
+	margin-right: 25%;
+    font-size: larger;
+    font-weight: bolder;
+    display: inline-block;
+    animation: scrollAnimation 15s linear infinite;
+  }
+
+@keyframes scrollAnimation {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(-20%);
+    }
+
+    60% {
+        transform: translateX(20%);
+    }
+
+    70%, 90% {
+        transform: translateX(0);
+    }
+} */
+</style>
+<body>
+	<!--header section start -->
+	<div class="header_section">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logo"><a href="index.html"><img src="images/loggggg.png"></a></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="services.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Syllabus.html">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="trainer.html">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
+                    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="mailto:info@vr-itech.com">info@vr-itech.com <br>+91 7892746634</a>
+					</li>
+                  </ul>
+                </div>
+            </nav>
+		</div>
+	</div>
+	<!--header section end -->
+	<!--banner section start -->
+	<div class="banner_section layout_padding">
+		<div class="container-fluid">
+			<div class="scroll-message-container">
+				<div class="scroll-text">
+					<span style="color: red;">Free Workshop On</span>
+				  
+				  <span style="color: blue;">Python</span>
+				  || 
+				  <span style="color: rgb(128, 0, 0);">Linux</span>
+				  || 
+				  <span style="color: rgb(255, 0, 174);">AWS</span>
+				  || 
+				  <span style="color: purple;">DevOps</span>
+				  on 
+				  <span style="color: red;">24-Jan-2024</span> to <span style="color: red;">27-Jan-2024. </span><span style="color: rgb(0, 0, 0);"><a href="https://wa.me/917892746634
+					">Contact Us | WhatsApp Us:+91 7892746634</a> </span>
+
+				</div>
+			  </div>
+			  
+			<h1 class="banner_taital">Welcome to VR-iTech Academy  </h1>
+			<h2 class="free_text">100% Job Oriented IT Courses Training by Industry Experts <br><br>Get Trained by Real Time Projects with 10+ years Experienced Trainers </h2>
+			<!-- <center><h2>Web Developement and Designing || DevOps || ML-DevOps || DevSecOps || Cyber Security || Ethical Hacking  <br>Python || Linuix || Digital Marketing || and SEO AWS AZURE || GCP Cloud</h2></center> -->
+			<center><h2>Web Design || Web Develompent || Linux-Windows-Cloud Computing || DevOps-DevSecOps-ML-DevOps ||<br> Python-Java || Shell Scripting || Python Automation || Cyber Security || Ethical Hacking || Data Science ||<br> Data Analytics || Data Engineering ||Digital Marketing || Software Programming || <br>Software Testing || Human Resources || Master Program</h2></center>
+            <!-- <div class="read_bt">
+            	<div class="read_text"><a href="about.html">Read More</a></div>
+            </div> -->
+		</div>
+	</div>
+	<!--banner section end -->
+	<!--bg_main section start -->
+	<!-- <div class="container">
+		<div class="bg_main"><img src="images/bg-main.png"></div>
+	</div> -->
+	<!--bg_main section end -->
+	<!--about section start -->
+	<div class="about_section">
+		<div class="container"><br><br>
+			<h1 class="about_text">About Us</h1>
+			<p class="lorem_text">VR-iTech Academy guides students through career transitions, offering job placement assistance for those with year gaps or educational gaps, and provides specialized support for individuals switching domains or entering IT careers, even if they have a non-technical background such as Diploma Graduates, BA, BCOM, BBA, MBA, BHM, BBM, BCA, MCA, BE, ME, BPharma, or Any other degrees, by filling their knowledge gaps and providing comprehensive guidelines on technology.</p>
+			<p style="font-size: 22px; color: #000000;"><strong>A seminar was held at Shridevi Degree College.</strong></p>
+
+
+			<!-- now height changed where 450px to 400px -->
+			<div class="w3-content w3-section">
+				<img class="mySlides1" src="./sem1.jpg" style="width:100%; height: 400px;">
+				<img class="mySlides1" src="./sem2.jpg" style="width:100% ;height: 400px;">
+				<img class="mySlides1" src="./sem3.jpg" style="width:100%; height: 400px;"><br>
+			  </div>
+			
+			  <script>var myIndex = 0;
+				carousel1();
+				
+				function carousel1() {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides1");
+				  for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				  }
+				  myIndex++;
+				  if (myIndex > x.length) {myIndex = 1}    
+				  x[myIndex-1].style.display = "block";  
+				  setTimeout(carousel1, 1000); // Change image every 2 seconds
+				}</script>
+			
+
+			<p style="font-size: 22px; color: #000000;"><strong>Students won a cash prize for successfully completing real-time tasks and coding challenges in Python and C at the event.</strong></p>
+			<div class="w3-content w3-section">
+				<img class="mySlides" src="./c1.jpg" style="width:100%; height: 400px;">
+				<img class="mySlides" src="./c2.jpg" style="width:100% ;height: 400px;">
+				<img class="mySlides" src="./c3.jpg" style="width:100%; height: 400px;"><br>
+			  </div>
+			  <script>var myIndex = 0;
+				carousel();
+				
+				function carousel() {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				  }
+				  myIndex++;
+				  if (myIndex > x.length) {myIndex = 1}    
+				  x[myIndex-1].style.display = "block";  
+				  setTimeout(carousel, 1000); // Change image every 2 seconds
+				}</script>
+			<div class="read_bt_main">
+            	<div class="read_text_2"><a href="about.html">Read More</a></div>
+            </div>
+		</div>
+	</div>&nbsp;<br><br><br><br>
+	<!--about section end -->
+	<div class="about_section">
+		<div class="container">
+			<h1 class="about_text">ROADMAP</h1>
+			<p class="ipsum_text">With a track record spanning over 8+ years, we have successfully trained over 5000 students in various technologies, helping them secure lucrative positions with impressive packages ranging from 5 to 35 LPA. Leveraging our expertise, we have contributed to the success stories of individuals placed in renowned companies such as Apponix Academy, People Net Consulting, and Merit Desk Solutions. Excited to extend our reach, we are now inaugurating a new branch, VR-iTech, in Tumkur.</p>
+		</div>&nbsp;<br><br><br><br>
+	
+
+	<!-- testimonials.html start -->
+	<div class="about_section">
+		<div class="container">
+			<h1 class="about_text">Testimonials</h1>
+			<p class="ipsum_text">Explore the genuine voices of our students at VR iTech Institute as they share their success stories, from our classrooms to impactful positions in renowned companies. These testimonials are the unfiltered voices of achievement and inspiration.</p>
+		</div>
+		<div class="read_bt_main">
+			<div class="read_text_2"><a href="testimonials.html">View more</a></div>
+		</div>
+	</div>
+
+
+	<!--testimonials.html end   -->
+
+	<!--service section start -->
+	<div class="service_section layout_padding">
+		<div class="container">
+			<h1 class="about_text">services</h1>
+			<p class="ipsum_text">VR-iTech offers cutting-edge technology training, providing 100% job placement for on-demand IT courses. Our programs focus on professional, real-time, hands-on training, imparting dedicated technology skills. We also offer career and profile guidelines to ensure a comprehensive learning experience.</p>
+			<div class="service_section_2">
+				<div class="row">
+				    <div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/information-technology.png"></div>
+				    	<h1 class="website_text">IT Courses</h1>
+				    	<p class="dolor_text">Providing training in cutting-edge technologies and on-demand IT courses.</p>
+				    </div>
+				    <div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/job.png"></div>
+				    	<h1 class="website_text">100% Job Placements</h1>
+				    	<p class="dolor_text">Ensuring 100% job placement in MNCs, our training program includes references and placements for specific technology jobs.</p>
+				    </div>
+				    <div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/certificate.png"></div>
+				    	<h1 class="website_text">Training and Global Certificates</h1>
+				    	<p class="dolor_text">Benefit from real-time, hands-on training delivered by experienced professionals, each specializing in dedicated technologies.</p>
+				    </div>
+					<div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/soft-skills.png"></div>
+				    	<h1 class="website_text">Soft Skills Program </h1>
+				    </div>
+				    <div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/guide.png"></div>
+				    	<h1 class="website_text">Interview Guidelines </h1>
+				    	<p class="dolor_text"></p>
+				    </div>
+				    <div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/test.png"></div>
+				    	<h1 class="website_text">Mock Inteviews</h1>
+				    	<p class="dolor_text"></p>
+				    </div>
+					<div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/career.png"></div>
+				    	<h1 class="website_text">Career and Profile Guidlines</h1>
+				    	<p class="dolor_text"></p>
+				    </div>
+				    <div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/human-resources.png"></div>
+				    	<h1 class="website_text">HR Training</h1>
+				    	<p class="dolor_text"></p>
+				    </div>
+				    <div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/avatar.png"></div>
+				    	<h1 class="website_text">Professional Placements Officers</h1>
+				    	<p class="dolor_text"></p>
+				    </div>
+					<div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/coach.png"></div>
+				    	<h1 class="website_text">Professional Trainers</h1>
+				    	<p class="dolor_text"></p>
+				    </div>
+					<div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/cv.png"></div>
+				    	<h1 class="website_text">CV(Resumes) and Naukri Account creations </h1>
+				    	<p class="dolor_text"></p>
+				    </div>
+					<div class="col-sm-12 col-lg-4">
+				    	<div class="icon_1"><img src="images/www.png"></div>
+				    	<h1 class="website_text">Uploding Resumes Into Job Portels</h1>
+				    	<p class="dolor_text">LinkedIn, GlassDoor, Dice, Monster, Indeed</p>
+				    </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<!--service section end -->
+	<!--contact section start -->
+	<div class="contact_section layout_padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<!-- <h1 class="contact_text">Requeste a call back</h1> -->
+					<div class="contact_main1">
+						<iframe width="400" height="200" src="https://www.youtube.com/embed/SEmXwSGFv1Y?si=eH3PyQQASjuzP4Tv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+						<iframe width="400" height="200" src="https://www.youtube.com/embed/xdDtoZh7EAw?si=jPxOPXBkGcAISmOd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe width="400" height="200" src="https://www.youtube.com/embed/WZ5L9YKOnUQ?si=ah5K_mWu5I5gaSEX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    			        <div class="mail_section">
+    			        	<!-- <input type="Name" class="mail_text" placeholder="Name" name="Name">
+    			        	<input type="Name" class="mail_text" placeholder="Email" name="Email">
+    			        	<input type="Name" class="mail_text" placeholder="Phone" name="Phone">
+    			        	<select>
+                              <option value="volvo">Select elements</option>
+                              <option value="saab">One</option>
+                              <option value="opel">Two</option>
+                              <option value="audi">Three</option>
+                            </select>
+    			        	<textarea class="massage_text" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
+    			        	<div class="send_bt">
+				                <div class="send_text"><a href="#">SEND</a></div>
+			                </div> -->
+    			        </div>
+    		        </div>
+				</div>
+				<div class="col-md-6">
+					<div class="contact_bg"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7764.4699926905405!2d77.121033!3d13.335653000000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb02d003afb7513%3A0x272b63278b3006a4!2sVR-iTech%20Academy!5e0!3m2!1sen!2sin!4v1704874235189!5m2!1sen!2sin" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+					<h3><strong>Name:</strong> Vishwanath<br><br>
+					<strong>Email:</strong> info@vr-itech.com<br><br>
+					<strong>Contact No:</strong> +91 7892746634, +91 9986233883</h3></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--contact section end -->
+	<!--client section start -->
+	<div class="client_section layout_padding">
+		<div class="container">
+			<center><strong><h1>VR-iTech Students are Placed Below mentioned MNC's</h1></strong></center>
+			<img src="./co.jpeg" alt="">&nbsp;<br>
+		</div>
+	</div>
+	<!--client section end -->
+	<!--footer section start -->
+	<div class="footer_section layout_padding">
+		<div class="container">
+			<div class="footer_main">
+				<div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <span class="input-group-text" id="basic-addon2">subscribe Now</span>
+                    </div>
+                </div><br>
+                <!-- <h1 class="year_text">2020</h1> -->
+                <h1 class="landing_text">Thank You For Choosing VR-iTech Academy</h1>
+			</div>
+			<div class="social_icon">
+				<ul>
+					<li><a href="#"><img src="images/fb-icon.png"></a></li>
+					<li><a href="#"><img src="images/twitter-icon.png"></a></li>
+					<li><a href="#"><img src="images/linkdin-icon.png"></a></li>
+					<li><a href="#"><img src="images/instagram-icon.png"></a></li>
+					<li><a href="#"><img src="images/youtub-icon.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--footer section end -->
+	<!--copyright section start -->
+	<div class="copyright_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="copyright_text">All Rights Reserved Design by <a href="https://www.vr-itech.com/"> VR-iTech Academy</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--copyright section end -->
+	 <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+        });
+    </script>
+</body>
+</html>
